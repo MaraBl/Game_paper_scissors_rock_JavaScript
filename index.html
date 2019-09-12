@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class = "newGame">
+      <button class="start" id="newGame">New Game</button>
+      <div id='infoAboutRounds'>Press the button to play
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="rock" class="player-move" data-move="rock">rock</button>
+      <button id="scissors" class="player-move" data-move="scissors">scissors</button>
+      <button id="paper" class="player-move" data-move="paper">paper</button>
+      <div id="output">
+      </div>
+    </div>
+    <div id="result">
+      <div class="score">
+        <h3>Your score:</h3>
+        <div id="player-score"></div>
+      </div>
+      <div class="score">
+        <h3>Computer score:</h3>
+        <div id="computer-score"></div>
+      </div>
+    </div>
+    <div class="overlay" id="modal-overlay">
+      <div class="modal" id="modal-one">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Round's number</th>
+            <th>Player's points</th>
+            <th>Computer's points</th>
+            <th>Win of the round</th>
+            <th>Results</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+      </table>
+      <a href="#" class="close">x</a>
+      <div id="resultOfGame" class="content">
+      </div>
+      </div>
+    </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>
